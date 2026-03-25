@@ -1,0 +1,393 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="WebStudio SiteGen 8.2.0"><title>zara traiteur — traiteur à El Jadida</title><meta name="description" content="Une cuisine qui donne envie, et un service qui répond vite à El Jadida."><meta property="og:title" content="zara traiteur — traiteur à El Jadida"><meta property="og:description" content="Une cuisine qui donne envie, et un service qui répond vite à El Jadida."><meta property="og:image" content="https://lh3.googleusercontent.com/a/ACg8ocKPtXml4FT7Zm0CUlPbV2PNB0RY6bkrFLtamGG7pBDqugNt5g=w1200-h800-p-rp-mo-br100"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><style>@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600&display=swap");</style><style>:root{--bg:#0B0A07;--fg:#F5F0EE;--mut:rgba(245,240,238,0.45);--line:rgba(230,150,15,0.18);--acc:#E6960F;--acc2:#C37B03;--card:rgba(255,255,255,0.04);--fh:'Libre Baskerville', ui-serif, Georgia, serif;--fb:'Nunito', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;--r:22px;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(900px 420px at 10% 10%, rgba(255,107,53,.12), transparent 55%),radial-gradient(900px 520px at 90% 20%, rgba(245,158,11,.12), transparent 60%),var(--bg);color:var(--fg);font-family:var(--fb);-webkit-font-smoothing:antialiased}
+
+header{position:fixed;inset:0 0 auto 0;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 6vw;z-index:60;transition:all .25s}
+header.sc{background:rgba(20,10,5,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--fh);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;font-size:18px}
+.burger{display:none;gap:6px;flex-direction:column;background:transparent;border:0;padding:8px;cursor:pointer}
+.burger span{width:22px;height:2px;background:var(--fg);border-radius:2px;opacity:.85}
+.nav{display:flex;align-items:center;gap:10px}
+.nav a{text-decoration:none;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);padding:10px 10px;border-radius:999px;transition:all .2s}
+.nav a:hover{color:var(--fg);background:rgba(255,255,255,.06)}
+.nav .navcta{background:var(--acc);color:#140A05;font-weight:900}
+
+.hero{min-height:100vh;display:grid;align-items:end;position:relative;overflow:hidden}
+.hbg{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.08) contrast(1.06);transform:scale(1.02)}
+.hov{position:absolute;inset:0;background:linear-gradient(180deg, rgba(20,10,5,.10) 0%, rgba(20,10,5,.90) 70%)}
+.hinner{position:relative;z-index:2;padding:128px 6vw 66px;max-width:1240px;display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:end}
+.k{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--mut)}
+.h1{font-family:var(--fh);font-size:clamp(48px,6.5vw,92px);line-height:.94;margin:14px 0 10px}
+.sub{color:var(--mut);line-height:1.85;max-width:62ch}
+
+.reserve{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:22px;padding:16px;backdrop-filter:blur(14px)}
+.reserve h3{margin:0 0 10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.reserve .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.reserve label{display:block;font-size:11px;color:var(--mut);margin-top:10px}
+.reserve input,.reserve select{width:100%;padding:11px 12px;border-radius:16px;border:1px solid var(--line);background:rgba(0,0,0,.18);color:var(--fg);font:inherit;margin-top:6px}
+.reserve button{margin-top:12px;width:100%;border:0;background:var(--acc);color:#140A05;padding:12px 14px;border-radius:16px;font-weight:950;cursor:pointer}
+
+section{padding:76px 6vw;border-top:1px solid var(--line)}
+.wrap{max-width:1240px;margin:0 auto}
+.h2{font-family:var(--fh);font-size:clamp(28px,3vw,54px);margin:0 0 10px}
+.p{color:var(--mut);line-height:1.85;max-width:74ch}
+
+.cards{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:22px}
+.card{grid-column:span 4;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:22px;padding:16px;position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;inset:-40% -40% auto auto;width:220px;height:220px;background:radial-gradient(circle at 30% 30%, rgba(255,107,53,.20), transparent 65%)}
+.card b{display:block;font-size:14px}
+.card p{margin:8px 0 0;color:var(--mut);line-height:1.8;font-size:13px}
+.card .m{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.pill{border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--mut);font-size:12px}
+
+.menu{margin-top:18px}
+.tabbar{display:flex;gap:10px;flex-wrap:wrap}
+.tabbar button{border:1px solid var(--line);background:rgba(255,255,255,.04);padding:10px 12px;border-radius:999px;cursor:pointer;font:inherit;color:var(--mut)}
+.tabbar button.on{background:var(--acc);color:#140A05;border-color:transparent;font-weight:900}
+.pane{display:none;margin-top:16px}
+.pane.on{display:block}
+.mi{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.14)}
+.mi b{font-size:14px}
+.mi span{color:var(--mut);font-size:12px;line-height:1.7;max-width:62ch;display:block;margin-top:4px}
+.price{font-family:var(--fh);font-size:16px;color:var(--acc2);white-space:nowrap}
+
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:22px}
+.gal a{grid-column:span 3;border-radius:18px;overflow:hidden;border:1px solid var(--line);cursor:pointer;position:relative}
+.gal img{width:100%;height:170px;object-fit:cover;display:block;transform:scale(1.02);transition:transform .35s}
+.gal a:hover img{transform:scale(1.08)}
+.gal a em{position:absolute;inset:auto 10px 10px 10px;background:rgba(20,10,5,.70);border:1px solid var(--line);border-radius:999px;padding:8px 10px;font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.t{border:1px solid var(--line);border-radius:22px;padding:16px;background:rgba(255,255,255,.03)}
+.t blockquote{margin:0;line-height:1.8;color:var(--fg);font-size:13px}
+.t figcaption{margin-top:10px;color:var(--mut);font-size:12px}
+
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:12px;margin-top:22px}
+.box{border:1px solid var(--line);border-radius:22px;padding:16px;background:rgba(255,255,255,.03)}
+.box a{color:var(--fg)}
+.btn{display:inline-block;margin-top:12px;background:var(--acc);color:#140A05;text-decoration:none;padding:12px 14px;border-radius:16px;font-weight:950}
+
+.faqs{display:grid;gap:10px;margin-top:22px}
+.faq{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:transparent;border:0;color:var(--fg);padding:14px 16px;cursor:pointer;font-weight:900;letter-spacing:.04em}
+.faq-q i{font-style:normal;color:var(--mut)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-a>div{padding:0 16px 16px;color:var(--mut);line-height:1.8;font-size:13px}
+.faq.open .faq-q i{color:var(--acc)}
+
+[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+[data-reveal].in{opacity:1;transform:none}
+
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:200}
+#lb.on{display:flex}
+#lb img{max-width:92vw;max-height:86vh;border-radius:18px;border:1px solid var(--line)}
+#lb button{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--fg);border-radius:999px;padding:10px 12px;cursor:pointer}
+
+@media (max-width: 980px){
+  .hinner{grid-template-columns:1fr;}
+  .cards .card{grid-column:span 6}
+  .tgrid{grid-template-columns:1fr;}
+  .contact{grid-template-columns:1fr;}
+  .gal a{grid-column:span 4}
+}
+@media (max-width: 720px){
+  .burger{display:flex}
+  .nav{position:fixed;inset:70px 12px auto 12px;display:none;flex-direction:column;align-items:stretch;background:rgba(20,10,5,.88);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:18px;padding:12px}
+  .nav.open{display:flex}
+  .cards .card{grid-column:span 12}
+  .gal a{grid-column:span 12}
+}
+
+[data-reveal]{opacity:1;transform:none}
+.js [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+/* ---- Layout variants (visual diversity) ---- */
+:root{
+  --section-pad: 96px;
+  --btn-r: 14px;
+  --btn-pad-y: 12px;
+  --btn-pad-x: 22px;
+  --card-shadow: 0 18px 50px rgba(0,0,0,.18);
+}
+body.layout-v0{ --section-pad: 88px; --btn-r: 12px; --card-shadow: 0 16px 44px rgba(0,0,0,.18); }
+body.layout-v1{ --section-pad: 110px; --btn-r: 999px; --btn-pad-x: 28px; --card-shadow: 0 22px 70px rgba(0,0,0,.22); }
+body.layout-v2{ --section-pad: 80px; --btn-r: 10px; --card-shadow: 0 12px 30px rgba(0,0,0,.14); }
+body.layout-v3{ --section-pad: 100px; --btn-r: 18px; --card-shadow: 0 20px 60px rgba(0,0,0,.20); }
+body.layout-v4{ --section-pad: 120px; --btn-r: 6px;  --card-shadow: 0 14px 40px rgba(0,0,0,.16); }
+section{ padding-top: var(--section-pad); padding-bottom: var(--section-pad); }
+.btn, .btn-main, .btn-hero, .btn-primary, .bp, .bo{
+  border-radius: var(--btn-r)!important;
+  padding: var(--btn-pad-y) var(--btn-pad-x)!important;
+}
+.card, .tile, .feature, .prop-card, .room-card, .glass, .panel{
+  box-shadow: var(--card-shadow);
+  border-radius: calc(var(--r) + 2px);
+}
+
+.layout-v0 .btn,.layout-v0 button{border-radius:12px}
+.layout-v1 .btn,.layout-v1 button{border-radius:999px}
+.layout-v2 .btn,.layout-v2 button{border-radius:6px}
+.layout-v3 .btn,.layout-v3 button{border-radius:16px}
+.layout-v4 .btn,.layout-v4 button{border-radius:10px}
+
+.layout-v1 h1{letter-spacing:.02em}
+.layout-v2 h1{text-transform:uppercase;letter-spacing:.08em}
+.layout-v3 h1{font-style:italic}
+
+.layout-v1 .wrap{max-width:1160px}
+.layout-v2 .wrap{max-width:980px}
+.layout-v3 .wrap{max-width:1100px}
+
+.layout-v2 section{padding-top:96px;padding-bottom:96px}
+.layout-v3 section{padding-top:72px;padding-bottom:72px}
+
+.layout-v4 .card,.layout-v4 .scard,.layout-v4 .tcard{box-shadow:0 18px 40px rgba(0,0,0,.22)}
+.layout-v1 .card,.layout-v1 .scard,.layout-v1 .tcard{box-shadow:0 10px 24px rgba(0,0,0,.18)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "zara traiteur", "address": {"@type": "PostalAddress", "streetAddress": "residence les palmier 11, El Jadida 24000", "addressLocality": "El Jadida", "addressCountry": "MA"}, "telephone": "+212676796882159", "openingHours": "Lun–Sam 9h–20h"}</script><script>window.__sectionOrder=["loading", "hero", "stats", "marquee", "special", "services", "testimonials", "cta", "gallery", "contact"];window.__sectionKeep=["hero", "stats", "marquee", "special", "services", "testimonials", "cta", "gallery", "contact"];</script></head><body id="top" data-seed=\"4047374992\"><header><a class="logo" href="#top">zara traiteur</a><button class="burger" data-burger aria-label="Menu" aria-expanded="false"><span></span><span></span></button><nav class="nav" data-nav><a href="#contact">Réserver</a><a href="#experience">La salle</a><a class="navcta" href="#contact">Contact</a></nav></header><main><section class="hero"><div class="hbg" style="background-image:url('https://lh3.googleusercontent.com/a/ACg8ocKPtXml4FT7Zm0CUlPbV2PNB0RY6bkrFLtamGG7pBDqugNt5g=w1200-h800-p-rp-mo-br100');" data-bg="https://lh3.googleusercontent.com/a/ACg8ocKPtXml4FT7Zm0CUlPbV2PNB0RY6bkrFLtamGG7pBDqugNt5g=w1200-h800-p-rp-mo-br100|https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E"></div><div class="hov"></div><div class="hinner"><div><div class="k">traiteur · El Jadida</div><h1 class="h1" data-reveal>Goût. Chaleur. Générosité.</h1><p class="sub" data-reveal>Une cuisine qui donne envie, et un service qui répond vite à El Jadida.</p></div><div class="reserve" data-reveal><h3>Réserver une table</h3><div class="row"><div><label>Date</label><input type="date"></div><div><label>Heure</label><input type="time"></div></div><div class="row"><div><label>Personnes</label><select><option>2</option><option>4</option><option>6</option><option>8</option></select></div><div><label>Nom</label><input placeholder="Votre nom"></div></div><button type="button" onclick="location.href='#contact'">Confirmer</button></div></div></section><section id="specialites"><div class="wrap"><h2 class="h2">Spécialités</h2><p class="p">Une carte courte, des produits frais, et une cuisson maîtrisée.</p><div class="cards"><article class="card" data-reveal><b>Spécialités signature</b><p>Les plats pour lesquels on fait le déplacement.</p><div class="m"><span class="pill">Chef</span><span class="pill">El Jadida</span></div></article><article class="card" data-reveal><b>Carte du jour</b><p>Tout fait maison, renouvelé selon le marché.</p><div class="m"><span class="pill">Saison</span><span class="pill">El Jadida</span></div></article><article class="card" data-reveal><b>Menu midi</b><p>Entrée + plat + dessert. Rapport qualité imbattable.</p><div class="m"><span class="pill">Midi</span><span class="pill">El Jadida</span></div></article><article class="card" data-reveal><b>Brunch week-end</b><p>Formule complète le samedi et dimanche.</p><div class="m"><span class="pill">W-end</span><span class="pill">El Jadida</span></div></article><article class="card" data-reveal><b>Privatisation</b><p>Soirées, anniversaires, déjeuners d&#x27;affaires.</p><div class="m"><span class="pill">Événement</span><span class="pill">El Jadida</span></div></article><article class="card" data-reveal><b>Livraison</b><p>Selon zone et horaires. Plats chauds livrés.</p><div class="m"><span class="pill">Zone</span><span class="pill">El Jadida</span></div></article></div></div></section><section id="menu"><div class="wrap"><h2 class="h2">Menu</h2><p class="p">Des classiques marocains, revisités avec précision.</p><div class="menu" data-tabs><div class="tabbar"><button type="button" data-tab="entrees">Entrées</button><button type="button" data-tab="plats">Plats</button><button type="button" data-tab="desserts">Desserts</button><button type="button" data-tab="boissons">Boissons</button></div><div class="pane" data-pane="entrees"><div class="mi" data-reveal><div><b>Briouates</b><span>Poulet ou fromage, croustillant</span></div><div class="price">26 MAD</div></div><div class="mi" data-reveal><div><b>Harira</b><span>Soupe traditionnelle, citron</span></div><div class="price">18 MAD</div></div><div class="mi" data-reveal><div><b>Salade marocaine</b><span>Tomate, concombre, herbes</span></div><div class="price">20 MAD</div></div><div class="mi" data-reveal><div><b>Zaalouk fumé</b><span>Aubergine, tomate, huile d&#x27;olive</span></div><div class="price">22 MAD</div></div></div><div class="pane" data-pane="plats"><div class="mi" data-reveal><div><b>Pastilla</b><span>Poulet, amandes, sucre</span></div><div class="price">86 MAD</div></div><div class="mi" data-reveal><div><b>Tajine poulet citron</b><span>Olives, citron confit</span></div><div class="price">78 MAD</div></div><div class="mi" data-reveal><div><b>Tajine agneau pruneaux</b><span>Amandes, cannelle</span></div><div class="price">92 MAD</div></div><div class="mi" data-reveal><div><b>Couscous royal</b><span>Viande + légumes du marché</span></div><div class="price">95 MAD</div></div></div><div class="pane" data-pane="desserts"><div class="mi" data-reveal><div><b>Assortiment de gteaux</b><span>Sélection maison</span></div><div class="price">38 MAD</div></div><div class="mi" data-reveal><div><b>Pastilla au lait</b><span>Amande, fleur d&#x27;oranger</span></div><div class="price">34 MAD</div></div><div class="mi" data-reveal><div><b>Chebakia</b><span>Miel, sésame</span></div><div class="price">26 MAD</div></div><div class="mi" data-reveal><div><b>Orange à la cannelle</b><span>Simple et frais</span></div><div class="price">22 MAD</div></div></div><div class="pane" data-pane="boissons"><div class="mi" data-reveal><div><b>Jus d&#x27;orange</b><span>Pressé minute</span></div><div class="price">22 MAD</div></div><div class="mi" data-reveal><div><b>Café</b><span>Espresso</span></div><div class="price">14 MAD</div></div><div class="mi" data-reveal><div><b>Eau</b><span>Plate ou gazeuse</span></div><div class="price">12 MAD</div></div><div class="mi" data-reveal><div><b>Thé à la menthe</b><span>Infusion traditionnelle</span></div><div class="price">16 MAD</div></div></div></div></div></section><section id="experience"><div class="wrap"><h2 class="h2">Expérience</h2><p class="p">Ambiance, détails, et moments partagés. Cliquez pour agrandir.</p><div class="gal"><a data-lb="https://lh3.googleusercontent.com/a/ACg8ocJKtVAs2cdX9cNZDp9mUjRCxhVIN0uKByMTbeiOxcaHocLrTQ=w1200-h800-p-rp-mo-br100" href="javascript:void(0)" aria-label="Photo 1" data-reveal><img src="https://lh3.googleusercontent.com/a/ACg8ocJKtVAs2cdX9cNZDp9mUjRCxhVIN0uKByMTbeiOxcaHocLrTQ=w1200-h800-p-rp-mo-br100" alt="zara traiteur photo 1" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerBWygTQRE1rAQInZ7rEvYrlRhAeFDIzNZLnG5zNzGYFauOBt1wZe2NQKjFZ_pL60_s2iGwcJsNyJpKUHN_isp2v2FuVkqt_pPAj-Zr4LdK1KNKTyQpXkyKJknDMrhMbeHezTe4=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 2" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerBWygTQRE1rAQInZ7rEvYrlRhAeFDIzNZLnG5zNzGYFauOBt1wZe2NQKjFZ_pL60_s2iGwcJsNyJpKUHN_isp2v2FuVkqt_pPAj-Zr4LdK1KNKTyQpXkyKJknDMrhMbeHezTe4=w1200-h800-p-k-no" alt="zara traiteur photo 2" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqbXtd2eEuMVrAiwGFR6F2Fe4awwEB7GadG6KsZvpBucD3JHrtF49ciQU_numOzF1PRpbo8LIUbFhUaYRpOHZ4F3xEo-HkCaF6ewXWb_S4-wFzfqIq4S0Zoo4gIKZVZcQxRYAQ6=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 3" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqbXtd2eEuMVrAiwGFR6F2Fe4awwEB7GadG6KsZvpBucD3JHrtF49ciQU_numOzF1PRpbo8LIUbFhUaYRpOHZ4F3xEo-HkCaF6ewXWb_S4-wFzfqIq4S0Zoo4gIKZVZcQxRYAQ6=w1200-h800-p-k-no" alt="zara traiteur photo 3" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerpaNxYhmQFzRLhAei2JFULg2b9rbJRuEcP4u877RotHquQ_PpDtJuNUPoM0ZsYEBIFEx8sTjY3gpZvziemPuxRB7jB5cUj7OtazpMhytUjU8wHgDfVJosddxY6DDwgxR-U_voA=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 4" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerpaNxYhmQFzRLhAei2JFULg2b9rbJRuEcP4u877RotHquQ_PpDtJuNUPoM0ZsYEBIFEx8sTjY3gpZvziemPuxRB7jB5cUj7OtazpMhytUjU8wHgDfVJosddxY6DDwgxR-U_voA=w1200-h800-p-k-no" alt="zara traiteur photo 4" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAweo8E8724NDUjqLFndDHFWBgxtuoN82jD66vo_pSX6cKrIYiSsLKUD1i1NT791YtAgMdG4HrgU230Ro1jgk1CtXcb85sgU9BHM0Cqd0xnSlVPNsVuK78isxVx4pDbSUpFv4lKedSfA=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 5" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweo8E8724NDUjqLFndDHFWBgxtuoN82jD66vo_pSX6cKrIYiSsLKUD1i1NT791YtAgMdG4HrgU230Ro1jgk1CtXcb85sgU9BHM0Cqd0xnSlVPNsVuK78isxVx4pDbSUpFv4lKedSfA=w1200-h800-p-k-no" alt="zara traiteur photo 5" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqEWfUixkgUTQ1dpWfOZH5mDmvkWTIlp8wQpgvDMnRWGI8pEUjR_O1hOl8y71p8GlFeL_MVCT0lDQk0vo6NR03ifZhC6-GA6sM_kzgEJfhxoey63weTML4jawHHgKYPwhAGbrMTSjHULpY=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 6" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqEWfUixkgUTQ1dpWfOZH5mDmvkWTIlp8wQpgvDMnRWGI8pEUjR_O1hOl8y71p8GlFeL_MVCT0lDQk0vo6NR03ifZhC6-GA6sM_kzgEJfhxoey63weTML4jawHHgKYPwhAGbrMTSjHULpY=w1200-h800-p-k-no" alt="zara traiteur photo 6" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" href="javascript:void(0)" aria-label="Photo 7" data-reveal><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" alt="zara traiteur photo 7" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" href="javascript:void(0)" aria-label="Photo 8" data-reveal><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" alt="zara traiteur photo 8" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" href="javascript:void(0)" aria-label="Photo 9" data-reveal><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" alt="zara traiteur photo 9" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://images.unsplash.com/photo-1555396273-122538a0a6a6?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" href="javascript:void(0)" aria-label="Photo 10" data-reveal><img src="https://images.unsplash.com/photo-1555396273-122538a0a6a6?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" alt="zara traiteur photo 10" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" href="javascript:void(0)" aria-label="Photo 11" data-reveal><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" alt="zara traiteur photo 11" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://images.unsplash.com/photo-1464305795204-4ae3b0b9834e?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" href="javascript:void(0)" aria-label="Photo 12" data-reveal><img src="https://images.unsplash.com/photo-1464305795204-4ae3b0b9834e?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" alt="zara traiteur photo 12" data-fb="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#f1449c%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#06f28c%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#c5db7c%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3Ezara%20traiteur%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a></div></div></section><section id="avis"><div class="wrap"><h2 class="h2">Avis</h2><div class="tgrid"><figure class="t" data-reveal><blockquote>Une adresse qu&#x27;on garde pour soi. Service précis, ambiance chaude, et des saveurs nettes.</blockquote><figcaption><b>Salma B.</b><span>El Jadida</span></figcaption></figure><figure class="t" data-reveal><blockquote>Privatisation pour un anniversaire: organisation impeccable et menu sur-mesure.</blockquote><figcaption><b>Siham K.</b><span>Casablanca</span></figcaption></figure><figure class="t" data-reveal><blockquote>Le couscous du vendredi est devenu un rituel. Meilleure table de El Jadida.</blockquote><figcaption><b>Youssef S.</b><span>El Jadida</span></figcaption></figure></div></div></section><section id="contact"><div class="wrap"><h2 class="h2">Contact & réservation</h2><div class="contact"><div class="box" data-reveal><b>zara traiteur</b><div style="margin-top:8px;color:var(--mut);line-height:1.8">residence les palmier 11, El Jadida 24000<br>El Jadida</div><a class="btn" href="https://wa.me/212676796882159?text=Bonjour,%20je%20voudrais%20plus%20d&#x27;informations." target="_blank" rel="noopener">WhatsApp</a></div><div class="box" data-reveal><div> <a href="tel:+212676796882159">+212676796882159</a></div><div style="margin-top:10px"> <a href="https://www.google.com/maps/search/residence+les+palmier+11,+El+Jadida+24000" target="_blank" rel="noopener">Google Maps</a></div><div style="margin-top:10px">Ou réservez via WhatsApp: réponse rapide.</div></div></div></div></section></main><footer style="padding:34px 6vw;color:var(--mut);border-top:1px solid var(--line)"><div class="wrap">© 2026 zara traiteur</div></footer><div id="lb" aria-hidden="true"><button type="button" aria-label="Fermer">Fermer</button><img alt="Agrandissement"></div><script>
+(function(){
+  try{
+    // Only enable JS-scoped animations if this script runs correctly.
+    // If anything throws later, we remove the class so the page stays readable.
+    document.documentElement.classList.add('js');
+
+    const q = (s,el=document)=>el.querySelector(s);
+    const qa = (s,el=document)=>Array.from(el.querySelectorAll(s));
+
+    // Layout fingerprint (per-business visual variation without breaking templates)
+    try{
+      const title = document.title || '';
+      const meta = q('meta[name="description"]');
+      const desc = meta && meta.content ? meta.content : '';
+      const body = document.body;
+      let seed = '';
+      if(body && body.dataset && body.dataset.seed){ seed = String(body.dataset.seed); }
+      if(!seed){ seed = (title + '|' + desc).slice(0, 300); }
+      let h = 0;
+      for(let i=0;i<seed.length;i++){ h = ((h<<5)-h) + seed.charCodeAt(i); h |= 0; }
+      const v = Math.abs(h) % 5;
+      const cls = 'layout-v' + v;
+      if(body){
+        body.classList.add(cls);
+        body.dataset.layout = cls;
+      }
+      // Section order & keep list (from real-time research)
+      try{
+        const main = q('main');
+        const normalize = (s)=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+        const alias = {
+          hero: ['hero','home','accueil','welcome'],
+          about: ['about','apropos','a propos','histoire','story','mission'],
+          services: ['services','prestations','soins','expertise','offres'],
+          menu: ['menu','carte','plats','boissons'],
+          gallery: ['gallery','galerie','photos','portfolio','realisations'],
+          testimonials: ['avis','temoignages','testimonials','reviews','clients'],
+          stats: ['stats','chiffres','numbers','compteurs'],
+          pricing: ['prix','tarifs','pricing','plans','abonnement'],
+          faq: ['faq','questions','q a','q&a'],
+          team: ['equipe','team','staff'],
+          process: ['process','processus','etapes','method'],
+          blog: ['blog','news','actualite','articles'],
+          map: ['map','carte','itineraire','localisation'],
+          contact: ['contact','rdv','reservation','booking','devis','appel','call']
+        };
+        const mapSection = (el)=>{
+          const raw = [
+            el.getAttribute('id')||'',
+            el.getAttribute('data-section')||'',
+            el.getAttribute('aria-label')||'',
+            (el.className||'')
+          ].join(' ');
+          const norm = normalize(raw);
+          for(const k in alias){
+            for(const w of alias[k]){
+              if(norm.includes(normalize(w))) return k;
+            }
+          }
+          return (el.getAttribute('id')||'').toLowerCase();
+        };
+        if(main){
+          let sections = Array.from(main.querySelectorAll('section'));
+          const orderList = Array.isArray(window.__sectionOrder) ? window.__sectionOrder.map(normalize) : [];
+          const keepList = Array.isArray(window.__sectionKeep) ? window.__sectionKeep.map(normalize) : [];
+          if(keepList.length){
+            const keepSet = new Set(keepList);
+            const always = new Set(['hero','contact']);
+            sections.forEach(sec=>{
+              const key = mapSection(sec);
+              if(key && !keepSet.has(key) && !always.has(key)){
+                sec.remove();
+              }
+            });
+            sections = Array.from(main.querySelectorAll('section'));
+          }
+          if(orderList.length){
+            const orderIdx = new Map(orderList.map((k,i)=>[k,i]));
+            const mapped = sections.map((el,idx)=>({el, idx, key: mapSection(el)}));
+            mapped.sort((a,b)=>{
+              const ai = orderIdx.has(a.key) ? orderIdx.get(a.key) : (1000 + a.idx);
+              const bi = orderIdx.has(b.key) ? orderIdx.get(b.key) : (1000 + b.idx);
+              return ai - bi;
+            });
+            mapped.forEach(o=>main.appendChild(o.el));
+          }else if(sections.length > 3){
+            // Fallback shuffle (keeps hero first, contact last)
+            const hero = sections[0];
+            const rest = sections.slice(1);
+            const tailIds = ['contact','rdv','reservation','booking','devis'];
+            const middle = [];
+            const tail = [];
+            rest.forEach(s=>{
+              const id = (s.getAttribute('id')||'').toLowerCase();
+              if(tailIds.includes(id)) tail.push(s);
+              else middle.push(s);
+            });
+            let seedNum = Math.abs(h) || 123456;
+            const rnd = ()=>{ seedNum = (seedNum * 1664525 + 1013904223) >>> 0; return seedNum / 4294967296; };
+            for(let i=middle.length-1;i>0;i--){
+              const j = Math.floor(rnd()*(i+1));
+              const tmp = middle[i]; middle[i]=middle[j]; middle[j]=tmp;
+            }
+            const ordered = [hero, ...middle, ...tail];
+            ordered.forEach(el=>main.appendChild(el));
+          }
+        }
+      }catch(_e){}
+      // Optional section trimming for extra uniqueness (never removes contact)
+      try{
+        if(body){
+          const vcls = body.dataset.layout || '';
+          const drop = (id)=>{
+            const el = q('#'+id);
+            if(el && el.tagName && el.tagName.toLowerCase()==='section'){ el.remove(); }
+          };
+          if(vcls === 'layout-v2'){ drop('faq'); }
+          if(vcls === 'layout-v3'){ drop('avis'); }
+          if(vcls === 'layout-v4'){ drop('gallery'); drop('galerie'); }
+        }
+      }catch(_e){}
+    }catch(_e){}
+
+    // Mobile nav
+    const burger = q('[data-burger]');
+    const nav = q('[data-nav]');
+    if(burger && nav){
+      burger.addEventListener('click', ()=>{
+        nav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', nav.classList.contains('open') ? 'true':'false');
+      });
+      qa('a[href^="#"]', nav).forEach(a=>a.addEventListener('click', ()=>{
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      }));
+    }
+
+    // Reveal on scroll (safe fallback if IntersectionObserver isn't available)
+    const reveals = qa('[data-reveal]');
+    if(reveals.length){
+      if('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+        }, {threshold: 0.12});
+        reveals.forEach(el=>io.observe(el));
+      }else{
+        reveals.forEach(el=>el.classList.add('in'));
+      }
+    }
+
+    // Accordions
+    qa('[data-acc]').forEach(acc=>{
+      acc.addEventListener('click', ()=>{
+        const item = acc.closest('[data-acc-item]');
+        const opened = item.classList.toggle('open');
+        const panel = q('[data-acc-panel]', item);
+        if(panel){ panel.style.maxHeight = opened ? panel.scrollHeight+'px' : '0px'; }
+      });
+    });
+
+    // Tabs
+    qa('[data-tabs]').forEach(root=>{
+      const btns = qa('[data-tab]', root);
+      const panes = qa('[data-pane]', root);
+      const activate = (id)=>{
+        btns.forEach(b=>b.classList.toggle('on', b.getAttribute('data-tab')===id));
+        panes.forEach(p=>p.classList.toggle('on', p.getAttribute('data-pane')===id));
+      };
+      btns.forEach(b=>b.addEventListener('click', ()=>activate(b.getAttribute('data-tab'))));
+      if(btns[0]) activate(btns[0].getAttribute('data-tab'));
+    });
+
+    // Lightbox
+    const lb = q('#lb');
+    const lbImg = q('#lb img');
+    const lbClose = q('#lb button');
+    if(lb && lbImg){
+      qa('[data-lb]').forEach(el=>{
+        el.addEventListener('click', ()=>{
+          const im = el.querySelector('img');
+          const src = (im && (im.currentSrc || im.src)) || el.getAttribute('data-lb');
+          if(!src) return;
+          lbImg.src = src;
+          lb.classList.add('on');
+        });
+      });
+      const close = ()=>{ lb.classList.remove('on'); lbImg.src=''; };
+      if(lbClose) lbClose.addEventListener('click', close);
+      lb.addEventListener('click', (e)=>{ if(e.target===lb) close(); });
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') close(); });
+    }
+
+    // Image fallback (when a remote image is blocked/expired)
+    // Supports multiple fallbacks via: data-fb="url1|url2"
+    qa('img[data-fb]').forEach(img=>{
+      const raw = (img.getAttribute('data-fb')||'').trim();
+      if(!raw) return;
+      const list = raw.split('|').map(s=>s.trim()).filter(Boolean);
+      if(!list.length) return;
+      img.addEventListener('error', ()=>{
+        let i = parseInt(img.getAttribute('data-fbi')||'0', 10);
+        while(i < list.length && (!list[i] || list[i] === img.getAttribute('src'))){ i++; }
+        if(i >= list.length) return;
+        img.setAttribute('data-fbi', String(i+1));
+        img.src = list[i];
+      });
+    });
+
+    // Background image fallback (hero/media blocks)
+    // Usage: <div class="hbg" data-bg="url1|url2|..."></div>
+    // We probe URLs sequentially with an Image() to detect failures, then set backgroundImage.
+    qa('[data-bg]').forEach(el=>{
+      const raw = (el.getAttribute('data-bg')||'').trim();
+      if(!raw) return;
+      const list = raw.split('|').map(s=>s.trim()).filter(Boolean);
+      if(!list.length) return;
+      let idx = 0;
+      const setBg = (u)=>{
+        const safe = String(u||'').replace(/['"]/g, (m)=> m==="'" ? "%27" : "%22");
+        el.style.backgroundImage = "url('" + safe + "')";
+      };
+      // Paint something immediately; if it fails, the probe will replace it.
+      try{ if(!el.style.backgroundImage) setBg(list[0]); }catch(e){}
+      const probe = ()=>{
+        if(idx >= list.length) return;
+        const u = list[idx++];
+        if(!u) return probe();
+        const img = new Image();
+        img.onload = ()=>{ try{ setBg(u); }catch(e){} };
+        img.onerror = ()=>{ probe(); };
+        img.src = u;
+      };
+      probe();
+    });
+
+    // Header shadow on scroll
+    const header = q('header');
+    if(header){
+      const onScroll = ()=>header.classList.toggle('sc', window.scrollY>8);
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    }
+  }catch(e){
+    try{ document.documentElement.classList.remove('js'); }catch(_e){}
+  }
+})();
+</script></body></html>
